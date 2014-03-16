@@ -3,7 +3,7 @@ var xmlrpc = require('xmlrpc'),
     zlib = require('zlib'),
     fs = require('fs'),
 
-    appUserAgent = 'FreedomHour v1',
+    appUserAgent = 'FreedomBot v1',
 
     client = xmlrpc.createClient({
         url: 'http://api.opensubtitles.org/xml-rpc',
@@ -20,8 +20,14 @@ var xmlrpc = require('xmlrpc'),
         'tur': 'Turkish',
         'dut': 'Dutch',
         'fre': 'French',
-        'ger': 'German'
-    },
+        'ger': 'German',
+        'lit': 'Lithuanian',
+        'lat': 'Latvian',
+        'hun': 'Hungarian',
+        'rus': 'Russian',
+        'ukr': 'Ukrainian',
+        'fin': 'Finnish',
+        'bul': 'Bulgarian'    },
 
     token;
 

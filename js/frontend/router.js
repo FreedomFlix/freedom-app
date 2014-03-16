@@ -1,7 +1,7 @@
 var Router = Backbone.Router.extend({
     routes: {
-        'index.html':   App.Controller.Home,
-        'search/:term': App.Controller.Search,
+        'index(:page).html':   App.Controller.Home,
+        'search/:term(/:page)': App.Controller.Search,
         'filter/:genre(/:page)': App.Controller.FilterGenre
     }
 });

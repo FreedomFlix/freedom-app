@@ -78,7 +78,7 @@ TranslatorNote=
 
 ; *** Buttons
 ButtonBack=< &Back
-ButtonNext=&Install FreedomFlix >
+ButtonNext=&Install Popcorn Time >
 ButtonInstall=&Install
 ButtonOK=OK
 ButtonCancel=Cancel
@@ -96,15 +96,15 @@ SelectLanguageTitle=Select Setup Language
 SelectLanguageLabel=Select the language to use during the installation:
 
 ; *** Common wizard text
-ClickNext=Click Install FreedomFlix to continue, or Cancel to exit Setup.
+ClickNext=Click Install Popcorn Time to continue, or Cancel to exit Setup.
 BeveledLabel=
 BrowseDialogTitle=Browse For Folder
 BrowseDialogLabel=Select a folder in the list below, then click OK.
 NewFolderName=New Folder
 
 ; *** "Welcome" wizard page
-WelcomeLabel1=You're about to get some FreedomFlix!
-WelcomeLabel2=This will install [name/ver] on your computer.%n%nKeep in mind that FreedomFlix is in Beta and we make no guarantees, so use it at your own risk.
+WelcomeLabel1=You're about to get some Popcorn Time!
+WelcomeLabel2=This will install [name/ver] on your computer.%n%nKeep in mind that Popcorn Time is in Beta and we make no guarantees, so use it at your own risk.
 
 ; *** "Password" wizard page
 WizardPassword=Password

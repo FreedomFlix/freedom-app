@@ -1,25 +1,37 @@
-App.Controller.Search = function (searchTerm) {
-    console.log('Searching for ' + searchTerm);
-
-    App.loader(true, i18n.__('searchLoading'));
-    window.initialLoading = true;
-
-    var movieList = new App.View.MovieList({
-        keywords: searchTerm,
-        genre: null
-    });
-
-    if (App.Page.Search) {
-        App.Page.Search.$el.empty();
-    } else {
+App.Controller.Search = function (searchTerm, page) {
+    // Check if page exists
+    if (!App.Page.Search) {
+        // Create page
         App.Page.Search = new App.View.Page({
-            id: 'search-list'
+            id: 'movie-list'
         });
     }
 
-    App.Page.Search.$el.append(movieList.$el);
+    var Scrapper = App.currentScrapper;
 
-    App.Page.Search.show();
+    var movieCollection = new Scrapper([], {
+        keywords: searchTerm,
+        genre: null,
+        page: page
+    });
 
-    userTracking.pageview('/movies/search?q='+encodeURIComponent(searchTerm)).send();
+    movieCollection.fetch();
+
+    // Create movie list
+    var movieList = new App.View.MovieList({
+        model: movieCollection
+    });
+
+    // Clean up if first page
+    if (!page || page == '1'){
+        console.log('Searching for ' + searchTerm);
+        $('.movie-list').first().empty();
+        App.loader(true, i18n.__('searchLoading'));
+        window.initialLoading = true;
+        App.Page.Search.show();
+    }
+
+    setTimeout(function(){
+        movieList.constructor.busy = false;
+    }, 5000);
 };

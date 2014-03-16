@@ -77,7 +77,7 @@ TranslatorNote=Spanish translation maintained by Jorge Andres Brugger (jbrugger@
 
 ; *** Buttons
 ButtonBack=< &Atrás
-ButtonNext=&Instalar FreedomFlix >
+ButtonNext=&Instalar Popcorn Time >
 ButtonInstall=&Instalar
 ButtonOK=Aceptar
 ButtonCancel=Cancelar
@@ -95,14 +95,14 @@ SelectLanguageTitle=Seleccione el Idioma de la Instalación
 SelectLanguageLabel=Seleccione el idioma a utilizar durante la instalación:
 
 ; *** Common wizard text
-ClickNext=Haz click en Instalar FreedomFlix para continuar o en Cancelar para salir de la instalación.
+ClickNext=Haz click en Instalar Popcorn Time para continuar o en Cancelar para salir de la instalación.
 BeveledLabel=
 BrowseDialogTitle=Buscar Carpeta
 BrowseDialogLabel=Seleccione una carpeta y luego haga clic en Aceptar.
 NewFolderName=Nueva Carpeta
 
 ; *** "Welcome" wizard page
-WelcomeLabel1=Estás por instalar FreedomFlix!
+WelcomeLabel1=Estás por instalar Popcorn Time!
 WelcomeLabel2=Instalaremos [name/ver] en tu computadora.%n%nTen en cuenta que [name] es una Beta y no incluimos garantías de ningún tipo, así que usalo bajo tu propio riesgo.
 
 ; *** "Password" wizard page

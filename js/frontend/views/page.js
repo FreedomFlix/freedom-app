@@ -6,14 +6,16 @@ App.View.Page = Backbone.View.extend({
     },
 
     render: function () {
+        $('.'+this.className).remove();
         this.$el.appendTo('section.container');
+        $('<ul class="movie-list"></ul>').appendTo(this.$el);
     },
 
     show: function () {
         // Fuck you UI.
         var $el = this.$el.hide(),
-            $pages = $('.page').addClass('notransition'),
-            $movies = $('.movie').removeClass('loaded');
+            $pages = $el.find('.page').addClass('notransition'),
+            $movies = $el.find('.movie').removeClass('loaded');
 
         // ontransitionend could be buggy here.
         setTimeout(function () {
